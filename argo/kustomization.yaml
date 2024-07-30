@@ -1,5 +1,5 @@
 resources:
 - argocd-cm.yaml
-- https://raw.githubusercontent.com/argoproj/argo-cd/v2.11.7/manifests/ha/install.yaml
+- https://raw.githubusercontent.com/argoproj/argo-cd/v2.11.7/manifests/install.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
