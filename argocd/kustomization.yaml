@@ -3,11 +3,10 @@ kind: Kustomization
 
 resources:
 #- argocd-cmp-cm.yaml
-- argocd-cm.yaml
 - https://raw.githubusercontent.com/argoproj/argo-cd/v2.11.7/manifests/install.yaml
 
-#patches:
-#- path: patch-container.json
+patches:
+- path: argocd-cm.yaml
 #  target:
 #    kind: Deployment
 #    name: argocd-repo-server
