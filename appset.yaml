@@ -20,6 +20,8 @@ spec:
         repoURL: https://github.com/SaschaJohn/argocdtest
         targetRevision: main
         path: '{{path}}'
+        plugin: 
+          name: kustomize-build-with-helm
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{path}}'
