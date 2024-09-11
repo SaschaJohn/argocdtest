@@ -10,6 +10,7 @@ spec:
       directories:
       - path: argocd
       - path: kyverno
+      - path: external-secrets
   template:
     metadata:
       name: '{{path}}'
