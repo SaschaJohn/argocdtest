@@ -1,0 +1,20 @@
+[
+    {
+        "op": "add",
+        "path": "/spec/template/spec/volumes/-",
+        "value": {
+            "name": "cmp-kustomize-build-with-helm",
+            "configMap": {
+                "name": "argocd-cmp-cm"
+            }
+        }
+    },
+    {
+        "op": "add",
+        "path": "/spec/template/spec/volumes/-",
+        "value": {
+            "name": "cmp-tmp",
+            "emptyDir": {}
+        }
+    }
+]
