@@ -12,3 +12,4 @@ spec:
       name: kustomize-build-with-helm
   destination:
     server: https://kubernetes.default.svc
+    namespace: 'argocd'
