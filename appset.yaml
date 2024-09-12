@@ -8,9 +8,9 @@ spec:
       repoURL: https://github.com/SaschaJohn/argocdtest
       revision: main
       directories:
-      - path: argocd
       - path: kyverno
       - path: external-secrets
+      - path: cert-manager
   template:
     metadata:
       name: '{{path}}'
