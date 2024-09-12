@@ -8,12 +8,10 @@ spec:
       repoURL: https://github.com/SaschaJohn/argocdtest
       revision: main
       directories:
-      - path: kyverno
-      - path: external-secrets
-      - path: cert-manager
+      - path: core/*
   template:
     metadata:
-      name: '{{path}}'
+      name: '{{path[1]}}'
     spec:
       project: 'default'
       source:
@@ -24,7 +22,7 @@ spec:
           name: kustomize-build-with-helm
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path}}'
+        namespace: '{{path[1]}}'
       syncPolicy:
         automated:
           prune: true
