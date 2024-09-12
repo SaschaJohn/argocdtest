@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: https://github.com/SaschaJohn/argocdtest
     targetRevision: main
-    path: argocd-kustomize
+    path: bootstrap/argocd-kustomize
     plugin: 
       name: kustomize-build-with-helm
   destination:
